@@ -30,6 +30,15 @@ async function processCommandLine() {
           default: 5000
         }
       })
+      .option({
+        'q': {
+          alias: 'enable-sqitch',
+          demandOption: false,
+          describe: 'sqitch inspector will be enabled',
+          type: 'boolean',
+          default: false
+        }
+      })
 }, 
     (argv) => {
       startServer(argv.postgresConnection, argv.schemataToGraphql, argv.port)
