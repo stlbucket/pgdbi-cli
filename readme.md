@@ -28,7 +28,8 @@ Options:
                                                                       [required]
   -p, --port                 the port on which to expose pgdbi
                                                         [number] [default: 5000]
-```
+  -q, --enable-sqitch        sqitch inspector will be enabled
+                                                      [boolean] [default: false]```
 ```
 -- example using docker for postgres
 
