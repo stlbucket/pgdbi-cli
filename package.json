@@ -1,7 +1,7 @@
 {
 	"name": "pgdbi-cli",
-	"version": "0.0.0",
-	"description": "My awesome command-line tool",
+	"version": "0.0.0.alpha",
+	"description": "a cli wrapper for postgraphile db inspector",
 	"license": "MIT",
 	"repository": "stlbucket/pgdbi-cli",
 	"author": {
@@ -9,17 +9,17 @@
 		"email": "stlbucket@gmail.com"
 	},
 	"bin": {
-		"pgdbi": "cli.js"
+		"pgdbi": "src/cli.js"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-    "start": "node -r dotenv/config cli.js",
+		"start": "node -r dotenv/config src/cli.js",
 		"test": "xo && ava"
 	},
 	"files": [
-		"cli.js"
+		"src/*.js"
 	],
 	"keywords": [
 		"cli",
@@ -27,12 +27,14 @@
 		"pgdbi"
 	],
 	"dependencies": {
-    "@graphile-contrib/pgdbi": "^1.0.9-alpha.50",
-    "dotenv": "^8.0.0",
-    "express": "^4.17.1",
-    "graphile-utils": "^4.4.0",
-    "postgraphile": "^4.4.0",
-    "postgraphile-plugin-connection-filter": "^1.1.0"
+		"@graphile-contrib/pgdbi": "^1.0.9-alpha.50",
+		"dotenv": "^8.0.0",
+		"express": "^4.17.1",
+		"graphile-utils": "^4.4.0",
+		"open": "^6.4.0",
+		"postgraphile": "^4.4.0",
+		"postgraphile-plugin-connection-filter": "^1.1.0",
+		"yargs": "^13.3.0"
 	},
 	"devDependencies": {
 		"ava": "^2.1.0",
