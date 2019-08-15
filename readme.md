@@ -1,7 +1,7 @@
 
 # pgdbi-cli
 
-> My awesome command-line tool
+a command line tool to easily run pgdbi
 
 
 ## Install
@@ -10,10 +10,10 @@
 $ npm install --global pgdbi-cli
 ```
 
-
 ## Usage
-
 ```
+$ pgdbi
+
 pgdbi-cli
 
 Options:
@@ -28,4 +28,9 @@ Options:
                                                                       [required]
   -p, --port                 the port on which to expose pgdbi
                                                         [number] [default: 5000]
+```
+```
+-- example using docker for postgres
+
+$ pgdbi -c postgres://postgres:1234@0.0.0.0/DB_NAME -s schema_one,schema_two
 ```
