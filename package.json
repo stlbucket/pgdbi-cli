@@ -1,21 +1,21 @@
 {
-	"name": "unicorn-fun-cli",
+	"name": "pgdbi-cli",
 	"version": "0.0.0",
 	"description": "My awesome command-line tool",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun-cli",
+	"repository": "stlbucket/pgdbi-cli",
 	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+		"name": "Kevin Burkett",
+		"email": "stlbucket@gmail.com"
 	},
 	"bin": {
-		"unicorn-fun": "cli.js"
+		"pgdbi": "cli.js"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
+    "start": "node -r dotenv/config cli.js",
 		"test": "xo && ava"
 	},
 	"files": [
@@ -24,12 +24,15 @@
 	"keywords": [
 		"cli",
 		"cli-app",
-		"unicorn",
-		"fun"
+		"pgdbi"
 	],
 	"dependencies": {
-		"meow": "^5.0.0",
-		"unicorn-fun": "^0.0.0"
+    "@graphile-contrib/pgdbi": "^1.0.9-alpha.50",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "graphile-utils": "^4.4.0",
+    "postgraphile": "^4.4.0",
+    "postgraphile-plugin-connection-filter": "^1.1.0"
 	},
 	"devDependencies": {
 		"ava": "^2.1.0",
