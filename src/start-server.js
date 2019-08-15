@@ -10,7 +10,7 @@ const makePluginHook = require('postgraphile').makePluginHook
 // const schemataToGraphql = process.env.SCHEMATA_TO_GRAPHQL
 // const port = process.env.PORT
 
-function startServer(postgresConnection, schemataToGraphql, port){
+function startServer(postgresConnection, schemataToGraphql, port, options){
 	const app = express();
 	const pluginHook = makePluginHook([pgdbi]);
 	
@@ -27,6 +27,7 @@ function startServer(postgresConnection, schemataToGraphql, port){
 			watchPg: true,
 			graphiql: true,
 			enhanceGraphiql: true,
+			pgdbi: options
 		}
 	);
 	

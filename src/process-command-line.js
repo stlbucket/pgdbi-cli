@@ -41,7 +41,9 @@ async function processCommandLine() {
       })
 }, 
     (argv) => {
-      startServer(argv.postgresConnection, argv.schemataToGraphql, argv.port)
+      startServer(argv.postgresConnection, argv.schemataToGraphql, argv.port, {
+        enableSqitch: argv.enableSqitch
+      })
     }
   )
   .option({
