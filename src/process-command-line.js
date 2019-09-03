@@ -27,7 +27,7 @@ async function processCommandLine() {
           demandOption: false,
           describe: 'the port on which to expose pgdbi',
           type: 'number',
-          default: 5000
+          default: 5099
         }
       })
       .option({
