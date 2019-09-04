@@ -1,6 +1,6 @@
 {
 	"name": "pgdbi-cli",
-	"version": "0.1.alpha68",
+	"version": "0.1.alpha.68",
 	"description": "a cli wrapper for postgraphile db inspector",
 	"license": "MIT",
 	"repository": "stlbucket/pgdbi-cli",
