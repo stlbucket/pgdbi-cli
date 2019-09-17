@@ -32,7 +32,7 @@ Options:
                                                       [boolean] [default: false]```
 ```
 -- example using docker for postgres
-
+```
 pgdbi -c postgres://postgres:1234@0.0.0.0/pg_phile_starter -s auth,auth_fn,org,org_fn,prj
 ```
 
