@@ -1,6 +1,6 @@
 {
 	"name": "pgdbi",
-	"version": "0.1.1-alpha.92",
+	"version": "0.1.1-alpha.93",
 	"description": "a cli wrapper for postgraphile db inspector",
 	"license": "MIT",
 	"repository": "stlbucket/pgdbi-cli",
@@ -27,7 +27,7 @@
 		"pgdbi"
 	],
 	"dependencies": {
-		"@graphile-contrib/pgdbi": "^1.0.9-alpha.92",
+		"@graphile-contrib/pgdbi": "^1.0.9-alpha.93",
 		"dotenv": "^8.0.0",
 		"express": "^4.17.1",
 		"open": "^6.4.0",
